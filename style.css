@@ -1,1 +1,17 @@
-
+html,
+body {
+  background-color: #000000;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#line {
+  font-size: 30px;
+  color: #000000;
+}
+.container {
+  flex: 1 0 auto;
+}
+.footer {
+  color: #000000;
+}
