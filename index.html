@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
 
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Главная</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+	<link rel="stylesheet" href="style.css" />
+	<script src="kalkul.js" defer></script>
+</head>
+
+<body>
+	<header>
+		<div class="container-fluid page" style="background-color: #a7b8">
+			<div class="container">
+				<div class="row">
+					<div class="col-5 offset-5 col-md-4 offset-md-1 order-2">
+						<div class="h-100 py-3">
+							<div id="line">
+								<a>Калькулятор стоимости</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-1 col-md-4 order-1">
+						<div class="h-100 py-3">
+							<div id="logo">
+								<img
+                  src="https://i.gifer.com/7gP8.gif"
+                  width="150"
+                  height="100"
+                  alt="name"
+                />
+              </div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+	</header>
+
+	<body>
+		<div class="container">
+			<hr />
+			<div class="row mt-3 order-2 order-sm-3" style="background-color: #a7b8">
+				<div class="col-6 col-md-6">
+					Введите кол-во товара:
+					<p><input type="text" id = "p" value="" placeholder="Количество" onKeyPress="cislo()"></p>
+						Выберите товары:
+						<form>
+
+							<select name="prodType">
+              <option value="1">Мобильный телефон</option>
+              <option value="2">Компьютерные принадлежности</option>
+              <option value="3">Игровая приставка</option>
+            </select>
+							<div id="radios">
+								<label><input type="radio" name="prodOptions" value="option1"> Клавиатура</label>
+								<label><input type="radio" name="prodOptions" value="option2"> Компьютерная Мышь</label>
+								<label><input type="radio" name="prodOptions" value="option3"> Наушники</label>
+							</div>
+							<div id="checkboxes">
+								<label><input type="checkbox" name="prop1"> С лицензией</label>
+								<label><input type="checkbox" name="prop2"> С дополнительным джойстиком</labe1l>
+							</div>
+						</form>
+						<div id="prodPrice"></div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid page mt-3" style="background-color: #a7b8">
+			<footer class="footer" id="foot">
+				<h5>(с) Глуховский Семён 2022</h5>
+			</footer>
+		</div>
+	</body>
+
+</html>
